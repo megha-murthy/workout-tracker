@@ -19,8 +19,9 @@ app.use(express.static("public"));
 
 // var MONGODB_URI=process.env.MONGODB_URI || "mongodb://localhost/workout"
 // mongoose.connect(MONGODB_URI);
+//mongodb://workout:password1@ds223161.mlab.com:23161/heroku_374jvllv
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://workout:password1@ds223161.mlab.com:23161/heroku_374jvllv",{ useNewUrlParser: true, useFindAndModify: false});
+mongoose.connect(process.env.MONGODB_URI || "mmongodb://localhost/workout",{ useNewUrlParser: true, useFindAndModify: false});
 
 //Routes
 
